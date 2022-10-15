@@ -26,7 +26,7 @@ const Hero = () => {
               link="https://github.com/publikphigor/dyor"
               handler={false}
               fill={false}
-              text="Contibute on GitHub"
+              text="Contribute on GitHub"
             />
           </div>
         </div>

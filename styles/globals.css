@@ -8,7 +8,7 @@
   .hero_bg {
     background-image: url("../assets/hero-bg.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   }
   .hero-img--gradient {
     background: linear-gradient(

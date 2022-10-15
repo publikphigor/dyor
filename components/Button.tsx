@@ -5,7 +5,7 @@ const Button = ({ link, text, handler, fill }) => {
       : "text-white hover:text-black hover:bg-white border-white"
   } ${
     link ? "inline-block" : ""
-  } border-[2px] py-[8px] px-[40px] font-semibold rounded-[5px] text-2xl lg:text-[14px] transition-colors duration-500 cursor-pointer lg:mx-0 leading-[1] w-[100%] lg:w-auto max-w-[350px]`;
+  } border-[2px] py-[10px] px-[40px] font-normal lg:font-semibold text-center rounded-[5px] text-xl lg:text-[14px] transition-colors duration-500 cursor-pointer lg:mx-0 leading-[1] w-[100%] lg:w-auto max-w-[350px]`;
 
   if (link && !handler) {
     return (
