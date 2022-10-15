@@ -4,18 +4,18 @@ import { hero_img } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="w-full  hero_bg">
-      <div className="px-[24px] lg:px-0 lg:w-[70%] mx-auto my-[40px] flex items-center justify-between min-h-[400px] relative">
-        <div className="w-full lg:w-[60%]">
-          <h1 className="text-[48px] font-normal leading-[1.2]">
+    <div className="w-full hero_bg pt-[100px]">
+      <div className="px-[24px] lg:px-0 lg:w-[70%] mx-auto my-[40px] flex flex-col lg:flex-row items-center justify-between min-h-[400px] relative">
+        <div className="w-full lg:w-[60%] mb-[40px]">
+          <h1 className="text-[48px] font-normal leading-[1.2] text-center md:text-left">
             Stay up-to-date in crypto. <br /> Do your own research today!
           </h1>
-          <p className="my-3">
+          <p className="my-5 md:my-3 text-center md:text-left">
             This is an open-source tool for doing research in crypto. You can
             easily look up real-time data (prices, TVLs, on-chain data) about
             Tokens, Exchanges, NFTs, Blockchains, etc.
           </p>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-col lg:flex-row">
             <Button
               link={false}
               handler={false}
