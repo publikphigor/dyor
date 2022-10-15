@@ -1,9 +1,14 @@
-const Button = ({ link, text, handler }) => {
-  if (link) {
+const Button = ({ link, text, handler, fill }) => {
+  if (link && !handler) {
     return (
       <a
         href={link}
-        className="border-[2px] py-[8px] px-[40px] font-semibold border-white text-white rounded-[5px] text-[14px] transition-colors duration-500 hover:text-black hover:bg-white cursor-pointer"
+        target="_blank"
+        className={`${
+          fill
+            ? "text-black bg-white hover:bg-secondary hover:text-white border-secondary"
+            : "text-white hover:text-black hover:bg-white  border-white "
+        } border-[2px] py-[8px] px-[40px] font-semibold rounded-[5px] text-[14px] transition-colors duration-500  cursor-pointer`}
       >
         {text}
       </a>
@@ -13,7 +18,11 @@ const Button = ({ link, text, handler }) => {
     return (
       <button
         onClick={handler}
-        className="border-[2px] py-[8px] px-[40px] font-semibold border-white text-white rounded-[5px] text-[14px] transition-colors duration-500 hover:text-black hover:bg-white cursor-pointer"
+        className={`${
+          fill
+            ? "text-black bg-white hover:bg-secondary hover:text-white border-secondary"
+            : "text-white hover:text-black hover:bg-white  border-white "
+        } border-[2px] py-[8px] px-[40px] font-semibold rounded-[5px] text-[14px] transition-colors duration-500  cursor-pointer`}
       >
         {text}
       </button>
@@ -24,8 +33,13 @@ const Button = ({ link, text, handler }) => {
     return (
       <a
         href={link}
+        target="_blank"
         onClick={handler}
-        className="border-[2px] py-[8px] px-[40px] font-semibold border-white text-white rounded-[5px] text-[14px] transition-colors duration-500 hover:text-black hover:bg-white cursor-pointer"
+        className={`${
+          fill
+            ? "text-black bg-white hover:bg-secondary hover:text-white border-secondary"
+            : "text-white hover:text-black hover:bg-white  border-white "
+        } border-[2px] py-[8px] px-[40px] font-semibold rounded-[5px] text-[14px] transition-colors duration-500  cursor-pointer`}
       >
         {text}
       </a>
@@ -33,7 +47,13 @@ const Button = ({ link, text, handler }) => {
   }
 
   return (
-    <button className="border-[2px] py-[8px] px-[40px] font-semibold border-white text-white rounded-[5px] text-[14px] transition-colors duration-500 hover:text-black hover:bg-white cursor-pointer">
+    <button
+      className={`${
+        fill
+          ? "text-black bg-white hover:bg-secondary hover:text-white border-white hover:border-secondary"
+          : "text-white hover:text-black hover:bg-white  border-white"
+      } border-[2px] py-[8px] px-[40px] font-semibold  rounded-[5px] text-[14px] transition-colors duration-500  cursor-pointer`}
+    >
       {text}
     </button>
   );

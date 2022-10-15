@@ -8,9 +8,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#73BOCD",
-        secondary: "#3D7C98",
+        secondary: "#37363C",
         accent: "#A8DFF1",
-        "brand-white": "#3B3C36",
+        "brand-gray": "#F9F9F9",
+        "brand-bg": "#121212",
       },
       fontFamily: {
         "open-sans": ["Open Sans", "sans-serif"],

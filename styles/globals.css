@@ -3,3 +3,22 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@layer utilities {
+  .hero_bg {
+    background-image: url("../assets/hero-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .hero-img--gradient {
+    background: linear-gradient(
+      0deg,
+      rgba(55, 54, 60, 0.9640231092436975) 0%,
+      rgba(55, 54, 60, 0.8743872549019608) 25%,
+      rgba(55, 54, 60, 0.9248074229691877) 50%,
+      rgba(55, 54, 60, 0.6839110644257703) 75%,
+      rgba(55, 54, 60, 0.47102591036414565) 100%
+    );
+    filter: blur(50px);
+  }
+}
