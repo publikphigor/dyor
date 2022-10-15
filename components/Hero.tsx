@@ -7,7 +7,7 @@ const Hero = () => {
     <div className="w-full hero_bg pt-[100px]">
       <div className="px-[24px] lg:px-0 lg:w-[70%] mx-auto my-[40px] flex flex-col lg:flex-row items-center justify-between min-h-[400px] relative">
         <div className="w-full lg:w-[60%] mb-[40px]">
-          <h1 className="text-[48px] font-normal leading-[1.2] text-center md:text-left">
+          <h1 className="text-[48px] font-medium leading-[1.2] text-center md:text-left font-lufga">
             Stay up-to-date in crypto. <br /> Do your own research today!
           </h1>
           <p className="my-5 md:my-3 text-center md:text-left">

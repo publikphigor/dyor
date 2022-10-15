@@ -15,6 +15,7 @@ module.exports = {
       },
       fontFamily: {
         "open-sans": ["Open Sans", "sans-serif"],
+        lufga: ["Lufga", "serif"],
       },
     },
   },

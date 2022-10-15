@@ -21,4 +21,46 @@
     );
     filter: blur(50px);
   }
+
+  @media screen and (max-width: 820px) {
+    .hero_bg {
+      background-image: none;
+    }
+  }
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../assets/fonts/Lufga/Lufga-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Lufga/Lufga-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../assets/fonts/Lufga/Lufga-ExtraBold.woff2") format("woff2"),
+    url("../assets/fonts/Lufga/Lufga-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../assets/fonts/Lufga/Lufga-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Lufga/Lufga-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lufga";
+  src: url("../assets/fonts/Lufga/Lufga-SemiBold.woff2") format("woff2"),
+    url("../assets/fonts/Lufga/Lufga-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
