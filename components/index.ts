@@ -4,5 +4,16 @@ import Button from "./Button";
 import Footer from "./Footer";
 import NavLink from "./NavLink";
 import FooterLink from "./FooterLink";
+import Cryptocurrencies from "./Cryptocurrencies";
+import CoinCard from "./CoinCard";
 
-export { Hero, Navbar, Button, Footer, NavLink, FooterLink };
+export {
+  Hero,
+  Navbar,
+  Button,
+  Footer,
+  NavLink,
+  FooterLink,
+  CoinCard,
+  Cryptocurrencies,
+};
