@@ -9,7 +9,7 @@ export async function getTopTenCoins() {
         "Content-Type": "application/json",
         "Access-Control-Allow-Origin": "*",
       },
-      url: `${BASE_URL}coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false`,
+      url: `${BASE_URL}coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=1&sparkline=false`,
       withCredentials: false,
     });
     let coins = res.data.map((item) => {
