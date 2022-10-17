@@ -2,7 +2,7 @@
 
 ## Demo
 
-Deploy the example using [Click here to view live.](https://cryptodyor.vercel.app/)
+[Click here to view live demo.](https://cryptodyor.vercel.app/)
 
 ## Tech Stack
 
