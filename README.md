@@ -3,6 +3,7 @@
 ## Demo
 
 [Click here to view live demo.](https://cryptodyor.vercel.app/)
+![dyor](https://user-images.githubusercontent.com/35191595/196220825-75004292-b37c-4b6e-9bac-7d17439f7ecc.png)
 
 ## Tech Stack
 
