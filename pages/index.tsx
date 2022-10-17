@@ -1,8 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { Hero, Navbar, Footer, Cryptocurrencies } from "../components";
+import { getTopTenCoins } from "./api/hello";
 
-const Home: NextPage = () => {
+export async function getStaticProps() {
+  const coins = await getTopTenCoins();
+
+  return { props: { coins } };
+}
+
+const Home: NextPage = ({ coins }) => {
   return (
     <div className="bg-brand-bg min-h-screen text-white font-open-sans">
       <Head>
@@ -11,7 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <Navbar />
       <Hero />
-      <Cryptocurrencies />
+      <Cryptocurrencies coins={coins} />
       <Footer />
     </div>
   );
