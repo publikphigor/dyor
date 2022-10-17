@@ -1,15 +1,17 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage, InferGetStaticPropsType } from "next";
 import Head from "next/head";
 import { Hero, Navbar, Footer, Cryptocurrencies } from "../components";
 import { getTopTenCoins } from "./api/hello";
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const coins = await getTopTenCoins();
 
   return { props: { coins } };
-}
+};
 
-const Home: NextPage = ({ coins }) => {
+const Home: NextPage = ({
+  coins,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div className="bg-brand-bg min-h-screen text-white font-open-sans">
       <Head>
