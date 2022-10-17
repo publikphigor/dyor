@@ -27,7 +27,7 @@ const CoinCard = ({
           {`${name[0].toUpperCase() + name.slice(1)}`}{" "}
           <span
             className={`px-2 py-1 bg-white rounded-md text-sm ${
-              pnl > 0 ? "text-red-500" : "text-green-500"
+              pnl > 0 ? "text-green-500" : "text-red-500"
             }`}
           >
             {`${Math.abs(pnl).toFixed(2)}%`}
