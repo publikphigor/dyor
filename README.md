@@ -35,7 +35,7 @@ This is a list of the intended features of this project.
 
 1.  Download the code to your local machine or [fork this repo](https://github.com/publikphigor/dyor) and clone using Git.
     Open Terminal in your desired folder and run the command: <br />
-    `git clone https://github.com/publikphigor/dyor`.
+    `git clone https://github.com/publikphigor/dyor`
 1.  cd into the root folder using: <br />
     `cd dyor`
 1.  Install the dependencies: <br />

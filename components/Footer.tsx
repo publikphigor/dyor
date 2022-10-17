@@ -47,22 +47,26 @@ const Footer = () => {
           </h2>
           <ul>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a
+                href="https://discord.gg/PWJAvd32ZH"
+                target="_blank"
+                className="text-sm"
+              >
                 Discord
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a href="/" target="_blank" className="text-sm">
                 Twitter
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a href="/" target="_blank" className="text-sm">
                 LinkedIn
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a href="/" target="_blank" className="text-sm">
                 Telegram
               </a>
             </FooterLink>
@@ -74,22 +78,38 @@ const Footer = () => {
           </h2>
           <ul>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a
+                href="https://github.com/publikphigor/dyor"
+                target="_blank"
+                className="text-sm"
+              >
                 Documentation
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a
+                href="https://github.com/publikphigor/dyor"
+                target="_blank"
+                className="text-sm"
+              >
                 GitHub
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a
+                href="https://github.com/publikphigor/dyor"
+                target="_blank"
+                className="text-sm"
+              >
                 Whitepaper
               </a>
             </FooterLink>
             <FooterLink>
-              <a href="/" className="text-sm">
+              <a
+                href="https://github.com/publikphigor/dyor"
+                target="_blank"
+                className="text-sm"
+              >
                 Audit
               </a>
             </FooterLink>
