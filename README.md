@@ -16,6 +16,8 @@ This is a list of the intended features of this project.
 - [ ] Create a page for all Exchanges and a nested route for each to show details of the Exchange.
 - [ ] Create a page for NFTs and a nested route for each to show details of NFT.
 - [ ] Details to be shown includes name, description, 24hour percentage (volume, price), exchanges listed, market cap, TVL, etcetera.
+- [ ] Setup CI/CD pipeline.
+- [ ] Unit, functional and end to end testing using Jest, Cypress or any well-known framework.
 
 ## Getting Started
 
