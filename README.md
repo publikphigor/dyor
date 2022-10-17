@@ -1,27 +1,37 @@
-# Next.js + Tailwind CSS Example
+# DYOR - Do Your Own Research! Documentation
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Demo
 
-## Deploy your own
+Deploy the example using [Click here to view live.](https://cryptodyor.vercel.app/)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Tech Stack
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## How to use
+## Getting Started
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### Installation
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+1.  Download the code to your local machine or clone the repository using Git.
+    Open Terminal in your desired folder and run the command:
+    `git clone https://github.com/publikphigor/dyor`.
+1.  cd into the root folder using:
+    `cd dyor`
+1.  Install the dependencies:
+    `npm install`
+1.  Start the development server:
+    `npm run dev`
+1.  Start Hacking!
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+### Contributing
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
+There are several ways to contribute to this project. They include:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- Improving the documentation.
+- Contributing code.
+- Opening issues to report bugs or suggest new features.
+- It is a free world over here, all suggestions and ideas are welcomed!
+  To start contributing, kindly read the [Contributing Guide](https://github.com/publikphigor/dyor).
