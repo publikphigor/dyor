@@ -6,6 +6,8 @@ import NavLink from "./NavLink";
 import FooterLink from "./FooterLink";
 import Cryptocurrencies from "./Cryptocurrencies";
 import CoinCard from "./CoinCard";
+import ExchangesCard from "./ExchangesCard";
+import ThemeToggler from "./ThemeToggler";
 
 export {
   Hero,
@@ -16,4 +18,6 @@ export {
   FooterLink,
   CoinCard,
   Cryptocurrencies,
+  ExchangesCard,
+  ThemeToggler,
 };

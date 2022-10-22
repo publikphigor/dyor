@@ -1,8 +1,15 @@
-import type { GetStaticProps, NextPage, InferGetStaticPropsType } from "next";
 import Head from "next/head";
-import { Hero, Navbar, Footer, Cryptocurrencies } from "../components";
+import { ThemeProvider } from "../context/theme";
+import type { GetStaticProps, NextPage, InferGetStaticPropsType } from "next";
+// import Head from "next/head";
+import {
+  Hero,
+  Navbar,
+  Footer,
+  Cryptocurrencies,
+  ThemeToggler,
+} from "../components";
 import { getTopTenCoins } from "./api/hello";
-import { og_img } from "../assets";
 
 export const getStaticProps: GetStaticProps = async () => {
   const coins = await getTopTenCoins();
@@ -14,7 +21,7 @@ const Home: NextPage = ({
   coins,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div className="bg-brand-bg min-h-screen text-white font-open-sans overflow-hidden">
+    <div className="dark">
       <Head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,10 +40,15 @@ const Home: NextPage = ({
         <title>DYOR - Do Your Own Research!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      <Hero />
-      <Cryptocurrencies coins={coins} />
-      <Footer />
+      <ThemeProvider>
+        <div className="dark:bg-brand-bg dark:text-white bg-white text-brand-bg min-h-screen font-open-sans overflow-hidden">
+          <Navbar />
+          <Hero />
+          <Cryptocurrencies coins={coins} />
+          <ThemeToggler />
+          <Footer />
+        </div>
+      </ThemeProvider>
     </div>
   );
 };
