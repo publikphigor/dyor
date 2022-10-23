@@ -1,14 +1,19 @@
-import { useThemeContext } from "../context/theme";
+import { useTheme } from "next-themes";
 
 const ThemeToggler = () => {
-  const { theme, themeToggle } = useThemeContext();
+  const { systemTheme, theme, setTheme } = useTheme();
+  function themeToggle() {
+    if (theme === "dark") setTheme("light");
+    if (theme === "light") setTheme("dark");
 
+    document.documentElement.classList.toggle("dark");
+  }
   return (
     <div
       onClick={themeToggle}
-      className="w-8 h-8 rounded-full flex items-center justify-center fixed bottom-6 right-6 dark:bg-brand-bg dark:text-white bg-white shadow dark:shadow-none text-black cursor-pointer"
+      className="w-8 h-8 rounded-full flex items-center justify-center fixed bottom-6 right-6 dark:bg-brand-bg dark:text-white bg-brand-bg dark:shadow-none text-white cursor-pointer"
     >
-      {theme === "dark" ? (
+      {theme === "light" ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

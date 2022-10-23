@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { ThemeProvider } from "../context/theme";
+import { ThemeProvider } from "next-themes";
 import type { GetStaticProps, NextPage, InferGetStaticPropsType } from "next";
 // import Head from "next/head";
 import {
@@ -21,7 +21,7 @@ const Home: NextPage = ({
   coins,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <div className="dark">
+    <div>
       <Head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +40,7 @@ const Home: NextPage = ({
         <title>DYOR - Do Your Own Research!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider>
+      <ThemeProvider enableSystem={true} attribute="class">
         <div className="dark:bg-brand-bg dark:text-white bg-white text-brand-bg min-h-screen font-open-sans overflow-hidden">
           <Navbar />
           <Hero />
