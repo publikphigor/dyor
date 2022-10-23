@@ -4,7 +4,7 @@ import { hero_img } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="w-full hero_bg pt-[100px]">
+    <div className="w-full dark:hero_bg pt-[100px]">
       <div className="px-[24px] lg:px-0 lg:w-[70%] mx-auto my-[40px] flex flex-col lg:flex-row items-center justify-between min-h-[400px] relative">
         <div className="w-full lg:w-[60%] mb-[40px]">
           <h1 className="text-[40px] font-medium leading-[1.2] text-center lg:text-left font-lufga">
@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-full lg:w-[40%] max-w-[500px] mx-auto relative">
-          <div className="hero-img--gradient absolute -top-[20%] -left-[20%] w-full h-full rounded-full"></div>
+          <div className="dark:hero-img--gradient absolute -top-[20%] -left-[20%] w-full h-full rounded-full"></div>
           <Image src={hero_img} layout="responsive" />
         </div>
       </div>

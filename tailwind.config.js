@@ -19,6 +19,7 @@ module.exports = {
         secondary: "#37363C",
         accent: "#A8DFF1",
         "brand-gray": "#F9F9F9",
+        "brand-gray-200": "#FBFBFB",
         "brand-bg": "#121212",
       },
       fontFamily: {

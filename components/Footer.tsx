@@ -2,7 +2,7 @@ import { FooterLink } from "../components";
 
 const Footer = () => {
   return (
-    <footer className="w-full">
+    <footer className="w-full mt-20">
       <div className="w-full lg:w-[70%] max-w-[1350px] mx-auto px-[24px] lg:px-0 py-[24px] flex flex-col sm:flex-row justify-between">
         <div className="w-full sm:w-1/2 lg:w-1/3 mb-10">
           <h2 className="uppercase mb-2 lg:mb-4 font-bold text-[14px]">
@@ -117,7 +117,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full lg:w-[70%] max-w-[1350px] mx-auto px-[24px] text-center lg:text-right py-[24px]">
-        <p className="text-gray-300 text-sm">
+        <p className="text-gray-500 dark:text-gray-300 text-sm">
           Built with &#129504; & &#10084; by{" "}
           <a
             href="https://github.com/publikphigor"

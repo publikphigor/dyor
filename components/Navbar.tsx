@@ -9,7 +9,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className="w-full fixed top-0 left-0 dark:bg-brand-bg dark:shadow-none shadow z-20 bg-opacity-80 backdrop-blur-sm">
+    <header className="w-full fixed top-0 left-0 dark:bg-brand-bg bg-white dark:shadow-none shadow z-20 dark:bg-opacity-80 backdrop-blur-sm">
       <div className="py-[24px] lg:py-3 px-[24px] lg:px-0 lg:w-[70%] mx-auto flex items-center justify-between relative z-10">
         <h1 className="font-medium text-3xl font-lufga">DYOR</h1>
         <nav

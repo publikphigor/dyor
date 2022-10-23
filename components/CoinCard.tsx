@@ -16,7 +16,7 @@ const CoinCard = ({
   price = 20000,
 }: Props) => {
   return (
-    <div className="rounded-xl p-[12px] lg:p-[24px] bg-neutral-700 hover:bg-neutral-800 transition-colors duration-500 cursor-pointer text-center w-[200px] xsm:w-[170px] ssm:w-[185px] nsm:w-[160px] md:w-[180px] lg:min-w-[200px]">
+    <div className="rounded-xl p-[12px] lg:p-[24px] dark:bg-neutral-700 bg-white hover:bg-brand-gray-200 shadow-lg dark:shadow-none dark:hover:bg-neutral-800 transition-colors duration-500 cursor-pointer text-center w-[200px] xsm:w-[170px] ssm:w-[185px] nsm:w-[160px] md:w-[180px] lg:min-w-[200px]">
       <h1 className="font-lufga text-3xl uppercase">{symbol}</h1>
       <h2>{`$${price}`}</h2>
       <div className="w-full my-4">
