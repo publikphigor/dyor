@@ -1,12 +1,5 @@
 import Image from "next/image";
-
-interface Props {
-  symbol?: string;
-  name?: string;
-  img?: string;
-  pnl?: number;
-  price?: number;
-}
+import { CoinCardProps } from "../types";
 
 const CoinCard = ({
   symbol = "BTC",
@@ -14,7 +7,7 @@ const CoinCard = ({
   img,
   pnl = 1,
   price = 20000,
-}: Props) => {
+}: CoinCardProps) => {
   return (
     <div className="rounded-xl p-[12px] lg:p-[24px] dark:bg-neutral-700 bg-white hover:bg-brand-gray-200 shadow-lg dark:shadow-none dark:hover:bg-neutral-800 transition-colors duration-500 cursor-pointer text-center w-[200px] xsm:w-[170px] ssm:w-[185px] nsm:w-[160px] md:w-[180px] lg:min-w-[200px]">
       <h1 className="font-lufga text-3xl uppercase">{symbol}</h1>

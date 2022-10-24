@@ -7,6 +7,7 @@ import FooterLink from "./FooterLink";
 import Cryptocurrencies from "./Cryptocurrencies";
 import CoinCard from "./CoinCard";
 import ExchangesCard from "./ExchangesCard";
+import Exchanges from "./Exchanges";
 import ThemeToggler from "./ThemeToggler";
 
 export {
@@ -18,6 +19,7 @@ export {
   FooterLink,
   CoinCard,
   Cryptocurrencies,
+  Exchanges,
   ExchangesCard,
   ThemeToggler,
 };

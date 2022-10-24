@@ -8,17 +8,19 @@ import {
   Footer,
   Cryptocurrencies,
   ThemeToggler,
+  Exchanges,
 } from "../components";
-import { getTopTenCoins } from "./api/hello";
+import { fetchAllData } from "./api/hello";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const coins = await getTopTenCoins();
+  const { coins, exchanges } = await fetchAllData();
 
-  return { props: { coins } };
+  return { props: { coins, exchanges } };
 };
 
 const Home: NextPage = ({
   coins,
+  exchanges,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
     <div>
@@ -45,6 +47,7 @@ const Home: NextPage = ({
           <Navbar />
           <Hero />
           <Cryptocurrencies coins={coins} />
+          <Exchanges exchanges={exchanges} />
           <ThemeToggler />
           <Footer />
         </div>

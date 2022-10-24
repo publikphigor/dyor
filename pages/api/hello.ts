@@ -16,18 +16,16 @@ export default function handler(
 export const BASE_URL = "https://api.coingecko.com/api/v3/";
 
 // Function for fetching each data
-export function fetchData(url) {
+export async function fetchData(url) {
   const res = axios({
     method: "get",
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
     },
-    url: `${BASE_URL}url`,
+    url: `${BASE_URL}${url}`,
     withCredentials: false,
   });
-
-  console.log(res);
   return res;
 }
 
@@ -49,8 +47,6 @@ export async function fetchAllData() {
       };
     });
 
-    console.log(coinsRes);
-
     // fetch details of top 8 exchanges
     const exchangesRes = await fetchData("exchanges?per_page=8");
     let exchanges = exchangesRes.data.map((item) => {
@@ -63,33 +59,6 @@ export async function fetchAllData() {
       };
     });
     return { coins, exchanges };
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-export async function getTopTenCoins() {
-  try {
-    const res = await axios({
-      method: "get",
-      headers: {
-        "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
-      },
-      url: `${BASE_URL}coins/markets?vs_currency=usd&order=market_cap_desc&per_page=8&page=1&sparkline=false`,
-      withCredentials: false,
-    });
-    let coins = res.data.map((item) => {
-      return {
-        name: item.id,
-        symbol: item.symbol,
-        img: item.image,
-        price: item.current_price,
-        pnl: item.price_change_percentage_24h,
-      };
-    });
-    console.log(res.data);
-    return coins;
   } catch (err) {
     console.error(err);
   }
