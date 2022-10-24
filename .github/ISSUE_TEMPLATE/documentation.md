@@ -1,7 +1,7 @@
 ---
 name: Documentation
 about: Help us improve the docs!
-title: "[Docs]"
+title: "[Docs]: "
 labels: documentation, enhancement, get quick github badges!
 assignees: ''
 

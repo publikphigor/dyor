@@ -1,7 +1,7 @@
 ---
 name: Bug Report
 about: Found something unusual? Report Bug!
-title: "[Bug]"
+title: "[Bug]: "
 labels: bug
 assignees: ''
 
