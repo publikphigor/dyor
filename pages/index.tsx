@@ -43,7 +43,7 @@ const Home: NextPage = ({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <ThemeProvider enableSystem={true} attribute="class">
-        <div className="dark:bg-brand-bg dark:text-white bg-white text-brand-bg min-h-screen font-open-sans overflow-hidden">
+        <div className="transition-colors duration-300 dark:bg-brand-bg dark:text-white bg-white text-brand-bg min-h-screen font-open-sans overflow-hidden">
           <Navbar />
           <Hero />
           <Cryptocurrencies coins={coins} />

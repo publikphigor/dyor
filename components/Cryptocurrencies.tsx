@@ -4,7 +4,7 @@ const Cryptocurrencies = ({ coins }) => {
   return (
     <div className="w-full px-[24px] lg:px-0 lg:w-[70%] mx-auto max-w-[1350px]">
       <h1 className="text-[20px] xsm:text-[32px] md:text-[40px] font-lufga flex items-baseline gap-2 xsm:gap-4">
-        Top Cryptocurrencies{" "}
+        Top Coins{" "}
         <a href="/" className="text-sm hover:underline">
           View all
         </a>
