@@ -35,7 +35,7 @@ where `YOUR-USERNAME` is your GitHub username. Here you're copying the contents 
 Change to the repository directory on your computer (if you are not already there):
 
 ```
-Run `cd TruHealth`
+Run `cd dyor`
 ```
 
 Now create a branch using the `git branch` command:
@@ -86,4 +86,4 @@ When creating a PR, add the linked issue in the description. For example : "Clos
 
 ## Once done with all this
 
-Congratulations!!! You've made a Contribution.
+Congratulations! You've made a Contribution.
