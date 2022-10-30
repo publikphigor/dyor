@@ -54,7 +54,7 @@ There are several ways to contribute to this project. They include:
 - Contributing code.
 - Opening issues to report bugs or suggest new features.
 - It is a free world over here, all suggestions and ideas are welcomed!
-  To start contributing, kindly read the [Contributing Guide](https://github.com/publikphigor/dyor).
+  To start contributing, kindly read the [Contributing Guide](https://github.com/publikphigor/dyor/blob/main/contributing.md).
 
 ### Support
 
@@ -62,4 +62,4 @@ Asides contrinuting directly to the project by opening issues and PRs, you can s
 
 ### License
 
-This project is Licensed with [MIT License](https://choosealicense.com/licenses/mit/)
+This project is Licensed with [MIT License](https://choosealicense.com/licenses/mit/).
