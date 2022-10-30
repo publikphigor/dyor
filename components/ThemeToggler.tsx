@@ -11,7 +11,7 @@ const ThemeToggler = () => {
   return (
     <div
       onClick={themeToggle}
-      className="w-8 h-8 rounded-full flex items-center justify-center fixed bottom-6 right-6 dark:bg-brand-bg dark:text-white bg-brand-bg dark:shadow-none text-white cursor-pointer"
+      className="w-8 h-8 rounded-full flex items-center justify-center fixed bottom-6 lg:bottom-10 right-6 dark:bg-brand-bg dark:text-white bg-brand-bg dark:shadow-none text-white cursor-pointer"
     >
       {theme === "light" ? (
         <svg
